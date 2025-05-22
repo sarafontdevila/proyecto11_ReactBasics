@@ -6,7 +6,7 @@ const ButtonPage = ({ page, setPage}) => {
     <div className="buttonPage">
     <button onClick = {()=> page > 1 && setPage(page -1)}>Anterior</button>
     <p>{page}</p>
-    <button onClick= {() => page < 15 && setPage(page +1)}>Siguiente</button>
+    <button onClick= {() => page < 2 && setPage(page +1)}>Siguiente</button>
   </div>
   )
 }

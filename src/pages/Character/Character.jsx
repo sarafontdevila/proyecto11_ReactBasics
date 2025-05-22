@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "./Character.css"
+import Header from "../../components/Header/Header";
 import { useEffect, useState } from "react";
-import Background from "../../components/Background/Background";
 
 const Character = () => {
 
@@ -14,7 +14,8 @@ const Character = () => {
     .then((res) => setCharacter(res))
   },[id])
   return (
-   
+    <>
+    <Header />
       <div className="character">
       <h2>{character.fullName}</h2>
       <div>
@@ -22,7 +23,11 @@ const Character = () => {
       </div>
       <p>{character.title}</p>
       <p>{character.family}</p>
+      <Link to="/">
+       <button className="back-button">Return</button>
+       </Link>
       </div>
+      </>
     
   )
 }

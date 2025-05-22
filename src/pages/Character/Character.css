@@ -32,11 +32,11 @@
 .character > p {
   width: 50%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .character > h2 {
-  font-size:32px;
+  font-size:25px;
   text-align:center;
   transition: all 0.5s;
   margin:0;
@@ -47,4 +47,20 @@
   text-align: center;
   font-size: 25px;
   margin: 10px 0;
+  line-height: 0.6;
+}
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-3); 
+  color: var(--color-1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: var(--color-3);
 }

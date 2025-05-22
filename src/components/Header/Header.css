@@ -1,0 +1,8 @@
+.header {
+  background-color: var(--color-5);
+  color: var(--color-1);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid var(--color-3);
+}
